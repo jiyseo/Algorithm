@@ -7,6 +7,10 @@ def CUTLAN(n, lan) :
     while start <= end :
         mid = (start + end) // 2
         sum = 0
+        print("sum = ", sum)
+        print("start = ", start)
+        print("mid = ", mid)
+        print("end = ", end)
         for l in lan :
             sum += l // mid
         if sum >= n : start = mid + 1

@@ -24,8 +24,8 @@ for i in range(m):
     a,b = map(int, sys.stdin.readline().split())
     graph[a][b] = graph[b][a] = 1
 
-visited = [0] * (m + 1)
+visited = [0] * (n + 1)
 dfs(graph, node, visited)
 print()
-visited = [0] * (m + 1)
+visited = [0] * (n + 1)
 bfs(graph, node, visited)
